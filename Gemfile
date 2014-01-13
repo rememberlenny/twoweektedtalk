@@ -43,6 +43,7 @@ gem 'omniauth-twitter'
 
 # Analytics
 gem 'newrelic_rpm'
+gem 'analytics-ruby', '<1.0'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
