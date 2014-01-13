@@ -4,16 +4,14 @@
 <%= image_tag 'twtt.png' %>
 </h1>
 
-<h2 class="" title="Subheader">What will you make for the world?</h2>
-<p title="Description">TWTT is a personal challenge to create something "<a href="http://ted.com"><strong>TED worthy</strong></a>" in a two week period.</p>
+<h2 title="Description">This is a challenge to create something "<a href="http://ted.com"><strong>TED worthy</strong></a>" in two week period.</h2>
 
-<%= render 'shared/share' %>
-<br>
+<h3>Post a goal below and accomplish it in two weeks</h3>
+<p>This is an opportunity for you to challenge something that you've been putting off. This is your chance to finally do that "thing" you've been thinking of. You can pick anything. Its completely up to you.</p>
+<p>Anyone can post on the TWTT wall. By posting, you are sharing your idea with the world. You are making a commitment to make progress on your goal. At the end of two weeks, please come back and report how you succeeded/redetermined.</p>
 <br>
 <div class="panel callout" style="    border-top: .8em solid rgb(22, 157, 72);">
 
-<h3>Create something</h3>
-<p>This is an opportunity for you to challenge something that you've been putting off. This is your chance to finally do that "thing" you've been thinking of. You can pick anything. Its completely up to you.</p>
 <%= render 'plans/form' %>
 
 </div>
@@ -22,9 +20,7 @@
 
 <%= link_to 'See the other #twoweektedtalks', recent_path, :class=> 'no-butt button tiny' %>
 
-
-<h3>Stay connected</h3>
-<p></p>
-<%= link_to 'Subscribe', subscribe_path, :class=> 'button tiny' %>
+<br><br>
+<%= render 'shared/share' %>
 
 </div>
