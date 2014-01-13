@@ -11,7 +11,6 @@ class PlansController < ApplicationController
   # GET /plans/1
   # GET /plans/1.json
   def show
-    redirect_to recent_path
   end
 
   # GET /plans/new

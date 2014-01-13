@@ -1,5 +1,31 @@
+<% provide(:title, @plan.title) %>
+
+<h1>Posted <a href="https://twitter.com/search?q=%23twoweektedtalk&src=hash">#twoweektedtalk</a></h1>
+
+  <div class="panel" style="">
+
+    <h2 style="padding:  0.5em 1em 0.3em;"><%= @plan.title %></h2>
+    <p class="text-right column">
+      <strong>Posted by @<a href="http://twitter.com/<%= @plan.twitter %>"><%= @plan.twitter %></a>
+  <%= distance_of_time_in_words(@plan.created_at, Time.now) %> ago</strong>
+    </p>
+    <dl class="accordion" data-accordion>
+      <dd>
+        <a href="#panel<%= @plan.id %>-1">How</a>
+        <div id="panel<%= @plan.id %>-1" class="content">
+          <%= @plan.actionsteps %>
+        </div>
+      </dd>
+      <dd>
+        <a href="#panel<%= @plan.id %>-2">Why</a>
+        <div id="panel<%= @plan.id %>-2" class="content">
+          <%= @plan.reason %>
+        </div>
+      </dd>
+    </dl>
+</div>
+
 
 
 <%= render 'shared/newsletter' %>
 
-<%= link_to 'View recent #twoweektedtalks', recent_path, :class=>'button secondary' %>

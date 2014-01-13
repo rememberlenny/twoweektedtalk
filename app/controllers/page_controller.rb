@@ -14,7 +14,7 @@ class PageController < ApplicationController
   end
 
   def recent
-     @plans = Plan.all.limit(10).reverse
+     @plans = Plan.all.reverse
   end
 
   def about
@@ -36,7 +36,6 @@ class PageController < ApplicationController
   # GET /plans/1
   # GET /plans/1.json
   def show
-    redirect_to recent_path
   end
 
   # GET /plans/new
