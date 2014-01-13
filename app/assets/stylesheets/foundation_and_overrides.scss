@@ -1032,33 +1032,33 @@ body{
 }
 @font-face {
     font-family: 'pf_din_text_comp_probold';
-    src: url('fonts/parachute_-_pfdintextcomppro-bold-webfont.eot');
-    src: url('fonts/parachute_-_pfdintextcomppro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/parachute_-_pfdintextcomppro-bold-webfont.woff') format('woff'),
-         url('fonts/parachute_-_pfdintextcomppro-bold-webfont.ttf') format('truetype'),
-         url('fonts/parachute_-_pfdintextcomppro-bold-webfont.svg#pf_din_text_comp_probold') format('svg');
+    src: font-url('fonts/parachute_-_pfdintextcomppro-bold-webfont.eot');
+    src: font-url('fonts/parachute_-_pfdintextcomppro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('fonts/parachute_-_pfdintextcomppro-bold-webfont.woff') format('woff'),
+         font-url('fonts/parachute_-_pfdintextcomppro-bold-webfont.ttf') format('truetype'),
+         font-url('fonts/parachute_-_pfdintextcomppro-bold-webfont.svg#pf_din_text_comp_probold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'news_706regular';
-    src: url('fonts/news706bt-romanc-webfont.eot');
-    src: url('fonts/news706bt-romanc-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/news706bt-romanc-webfont.woff') format('woff'),
-         url('fonts/news706bt-romanc-webfont.ttf') format('truetype'),
-         url('fonts/news706bt-romanc-webfont.svg#news_706regular') format('svg');
+    src: font-url('fonts/news706bt-romanc-webfont.eot');
+    src: font-url('fonts/news706bt-romanc-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('fonts/news706bt-romanc-webfont.woff') format('woff'),
+         font-url('fonts/news706bt-romanc-webfont.ttf') format('truetype'),
+         font-url('fonts/news706bt-romanc-webfont.svg#news_706regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'pf_din_text_comp_pro_lightRg';
-    src: url('fonts/parachute_-_pfdintextcomppro-light-webfont.eot');
-    src: url('fonts/parachute_-_pfdintextcomppro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/parachute_-_pfdintextcomppro-light-webfont.woff') format('woff'),
-         url('fonts/parachute_-_pfdintextcomppro-light-webfont.ttf') format('truetype'),
-         url('fonts/parachute_-_pfdintextcomppro-light-webfont.svg#pf_din_text_comp_pro_lightRg') format('svg');
+    src: font-url('fonts/parachute_-_pfdintextcomppro-light-webfont.eot');
+    src: font-url('fonts/parachute_-_pfdintextcomppro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('fonts/parachute_-_pfdintextcomppro-light-webfont.woff') format('woff'),
+         font-url('fonts/parachute_-_pfdintextcomppro-light-webfont.ttf') format('truetype'),
+         font-url('fonts/parachute_-_pfdintextcomppro-light-webfont.svg#pf_din_text_comp_pro_lightRg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
