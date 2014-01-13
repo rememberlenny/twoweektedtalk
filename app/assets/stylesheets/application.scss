@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ *= require foundation_and_overrides
+ */
+ .accordion dd > a {
+  padding: .2em 1rem !important;
+}
+.no-butt{
+  margin-bottom: 0em !important;
+}
+.recent{
+  hr{
+    padding-bottom: 0em;
+    border-color: rgba(0, 0, 0, 0);
+  }
+  h2{
+    border-top: .2em solid rgb(73, 129, 247);
+  }
+  .panel{
+    background: rgb(255, 255, 255);
+    padding: 0em;
+    p{
+      margin-top: 1em;
+      margin-bottom: 0em;
+    }
+  }
+  dd{
+    border-left: 1em solid rgb(226, 226, 226);
+    > a{
+      padding-right: 1rem !important;
+    }
+    &.active{
+      border-left: 1em solid rgb(73, 129, 247);
+    }
+  }
+  h1{
+    margin-bottom:1em;
+  }
+}
+
+.box-color{
+  li{
+    list-style: none;
+  }
+}
+.inof{
+  font-size: 1.6em;
+}
+.press{
+  .box-color{
+    img{
+      display: inline-block;
+    }
+    h3{
+      display: inline- block;
+    }
+  }
+}
+input[type="text"], textarea{
+  height: 60px !important;
+  font-size:1.4em !important;
+}
+
+textarea{
+  min-height: 3em !important;
+}

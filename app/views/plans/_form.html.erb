@@ -1,0 +1,33 @@
+<%= form_for(@plan) do |f| %>
+  <% if @plan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plan.errors.count, "error") %> prohibited this plan from being saved:</h2>
+
+      <ul>
+      <% @plan.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <h4 class="subheader">What will do you for your #twoweektedtalk?</h4>
+    <%= f.text_field :title, :placeholder=> truncate(@placeholder.title, :length => 85), :input_html => {:maxlength => 140} , :required => true %>
+  </div>
+  <div class="field">
+    <h4 class="subheader">How are you doing this?</h4>
+    <%= f.text_area :actionsteps, :placeholder=> truncate(@placeholder.actionsteps, :length => 150), :required => true %>
+  </div>
+  <div class="field">
+    <h4 class="subheader">Why is this important?</h4>
+    <%= f.text_field :reason, :placeholder=> truncate(@placeholder.reason, :length => 85), :required => true %>
+  </div>
+  <div class="field">
+    <h4 class="subheader">What is your twitter handle? (so we can contact you in two weeks)</h4>
+    <%= f.text_field :twitter, :placeholder=>"@twoweektedtalk (without the @-sign)", :required => true %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Submit', :class=>"button even success large" %>
+  </div>
+<% end %>
