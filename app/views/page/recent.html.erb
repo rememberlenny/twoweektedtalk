@@ -8,7 +8,8 @@
       <h2 style="padding:  0.5em 1em 0.3em;"><%= plan.title %></h2>
       <p class="text-right column">
         <strong>Posted by @<a href="http://twitter.com/<%= plan.twitter %>"><%= plan.twitter %></a>
-    <%= distance_of_time_in_words(plan.created_at, Time.now) %> ago</strong>
+        <%= link_to plan do %>
+    <%= distance_of_time_in_words(plan.created_at, Time.now) %> ago <% end %></strong>
       </p>
       <dl class="accordion" data-accordion>
         <dd>
